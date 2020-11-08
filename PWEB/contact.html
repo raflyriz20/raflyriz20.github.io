@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Destination</title>
-	<link rel="stylesheet" type="text/css" href="destination.css">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 <body>
 	<header>
@@ -11,10 +11,10 @@
 			<img class="logo" src="logo/trip co.png">
 			<nav>
 				<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="destination.html">Destination</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="Destination.html">Destination</a></li>
+				<li><a href="News.html">News</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
 			</ul>
 			</nav>
 			<div class="header-right">
@@ -25,9 +25,11 @@
 	<div class="top-wrapper">
 		<div class="container">
 			<h3>TRIP TO INDONESIA</h3>
-			<h1>Choose Your</h1>
-			<h1>Destination</h1>
+			<h1>Contact Us</h1>
+			<h1>If You Need</h1>
+			<h1>Help</h1>
 		</div>
+
 		<div class="media">
 			<a href="https://www.instagram.com/" target="_blank">
 				<img class="a" src="logo/instagram.png">
@@ -40,65 +42,32 @@
 			</a>
 		</div>
 	</div>
-	<div class="main-top">
-		<section class="search">
-			<h2>Where you want to go?</h2>
-			<div class="box">
-				<input type="text" placeholder="Where to go?">
-				<input type="date" placeholder="Date">
-				<input list="travel" name="travel" placeholder="Travel type">
-				<datalist id="travel">
-					<option value="Diving"></option>
-					<option value="Tracking"></option>
-				</datalist>
-			</div>
-			<div class="btn-submit">
-				<a href="#">
-					<button type="button" id="button2">Search</button>
-				</a>
-			</div>
-		</section>
-	</div>
-	<div class="main-mid">
+	<div class="main">
+
 		<div class="popular">
-			<div class="col">
-			<div class="card card1">
-				<a href="description.html">
-					<h5>Gunung Bromo</h5>
-					<p>Rp.500.000</p>
-				</a>
-			</div>
-			<div class="card card2">
-				<a href="description.html">
-					<h5>Raja Ampat</h5>
-					<p>Rp.500.000</p>
-				</a>
-			</div>
-			<div class="card card3">
-				<a href="description.html">
-					<h5>Pulau Komodo</h5>
-					<p>Rp.500.000</p>
-				</a>
-			</div>
-			<div class="card card4">
-				<a href="description.html">
-					<h5>Tanah Lot</h5>
-					<p>Rp.500.000</p>
-				</a>
-			</div>
-			<div class="btn-box">
-				<a href="destination.html">
-					<button type="button" id="button1">More Places</button>
-				</a>
-			</div>
+			<h1>Contact</h1>
 		</div>
-		<div class="join">
-			<h2>Want to join with us?</h2>
-			<div class="btn-box">
-				<a href="Order.html">
-					<button type="button" id="button1">Order Now</button>
-				</a>
-			</div>
+		<div class="formulir">
+			<form id="reg" method="post" action="..php">
+				<label> Name :</label><br>
+				<input type="email" name="email" id="name"><br><br>
+				<label> Email :</label><br>
+				<input type="email" name="email" id="name"><br><br>
+				<label> Subject:</label><br>
+				<input type="email" name="email" id="name"><br><br>
+				<label> Message :</label><br>
+				<textarea rows="10" cols="40" placeholder="Write Your Question"></textarea><br><br>
+				<button type="submit" id="sub">Send Message</button>
+			</form>
+		</div>
+		<div class="formulir right">
+			<form>
+				<img src="img/about.jpg">
+				<h2>More Info</h2>
+				<br>
+				<p>Lorem ipsum dolor sit amet, consecteur adipsicing elit. Pariatur ab quas facilis obnacemial non ea, est odit repeliat distincto incident, quila allquam eveniet quod dellenti impedit sapiente alque tennetur porro</p><br><br><br>
+				<button type="submit" id="sub">Learn More</button>
+			</form>
 		</div>
 	</div>
 	<footer>
@@ -123,9 +92,9 @@
 			<nav>
 				<h3>Navigations</h3>
 				<ul>
-					<li><a href="Home.html">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="destination.html">Destination</a></li>
-					<li><a href="news.html">News</a></li>
+					<li><a href="News.html">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>

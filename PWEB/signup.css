@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.container{
+	width: 1170px;
+	margin: 0;
+	padding: 0;
+}
+.top-wrapper{
+	padding: 180px 0px 100px 0px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(home.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 65vh;
+	z-index: 9;
+}
+header {
+	height: 45px;
+	width: 100%;
+	background: linear-gradient(to top, rgba(250, 171, 45, 1), rgba(250, 45, 230, 1));
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	box-sizing: border-box;
+}
+.header-left{
+	height: 13%;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+.logo{
+	width: 50px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.header-left nav{
+	flex: 1;
+	text-align: center;
+
+}
+.header-left nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+	float: left;
+
+}
+.header-left nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	border: 1px solid transparent;
+	transition: 0.6s;
+	line-height: 45px;
+}
+.header-left nav ul li a:hover{
+	background-color: rgba(187, 191, 202, 1);
+	line-height: 50px;
+  	padding: 15px 25px;
+}
+.header-left nav ul li.active a{
+	background-color: #fff;
+	line-height: 45px;
+  	padding: 0 25px;
+  	color: #000;
+  	display: block;
+}
+.header-right {
+  background-color: rgba(159, 159, 161, 0.8);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(159, 159, 161, 1);
+}
+
+.header-right a {
+  line-height: 45px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.content{
+	padding-left: 500px;
+	padding-right: 500px;
+}
+.box{
+	width: 360px;
+	height: 450px;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+h3{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #777;
+}
+.box form{
+	width: 280px;
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	transition: 0.6s;
+}
+form input{
+	width: 100%;
+	padding: 10px 5px;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+::placeholder{
+	color: #777;
+}
+.btn-box{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+form button{
+	width: 110px;
+	height: 35px;
+	margin: 0 10px;
+	background: linear-gradient(to right, #ec0cb0, #ff8921);
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+}
+#Form2{
+	left: 450px;
+}
+#Form3{
+	left: 450px;
+}
+
+.garis{
+	width: 360px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 -1px 5px -1px #000;
+	position: relative;
+}
+.step{
+	width: 120px;
+	text-align: center;
+	color: #333;
+	position: relative;
+}
+#progress{
+	position: absolute;
+	height: 100%;
+	width: 120px;
+	background: linear-gradient(to right, #ec0cb0, #ff8921);
+	transition: 1.0s;
+}
+#progress::after{
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-left: 20px solid #ff8921;
+}

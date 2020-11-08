@@ -30,7 +30,7 @@ a {
 .top-wrapper h1{
 	color: white;
 	font-style: initial;
-	font-size: 60px;
+	font-size: 50px;
 	letter-spacing: 5px;
 	margin-bottom: 10px;
 	padding-left: 8%;
@@ -38,14 +38,14 @@ a {
 header {
 	height: 45px;
 	width: 100%;
-	background: linear-gradient(to top, rgba(250, 171, 45, 1), rgba(250, 45, 230, 1));
+	background: linear-gradient(to top, rgba(250, 171, 45, 0.7), rgba(250, 45, 230, 0.7));
 	position: fixed;
 	top: 0;
 	z-index: 10;
 	box-sizing: border-box;
 }
 .header-left{
-	height: 13%;
+	height: 12%;
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
@@ -77,7 +77,7 @@ header {
 }
 .header-left nav ul li a:hover{
 	background-color: rgba(187, 191, 202, 1);
-	line-height: 50px;
+	line-height: 45px;
   	padding: 15px 25px;
 }
 .header-left nav ul li.active a{
@@ -103,11 +103,28 @@ header {
   display: block;
   text-decoration: none;
 }
+.box{
+	padding-left: 8%;
+}
+.box input{
+	border-radius: 30px;
+	width: 40%;
+	height: 40px;
+	background-color: rgba(252, 250, 252, 0.3);
+	border: 0;
+	padding-left: 4%;
+	color: white;
+
+}
+::placeholder{
+	color: #fff;
+}
+
 .media{
 	height: 10px;
 	display: grid;
 	justify-content: right;
-	margin-top: 130px;
+	margin-top: 200px;
 	padding-right: 8%;
 	opacity: 0.8;
 
@@ -118,116 +135,81 @@ header {
 .a{
 	margin-bottom: 15px;
 }
-.main-top{
-	padding-left: 8%;
-	height: 100px;
-	background-color: #150482;
-	padding-top: 50px;
-	padding-right: 8%;
-}
-.main-top h2{
-	float: left;
-	margin-right: 50px;
-	color: white;
-}
-.search, .box, .btn-submit{
-	float: left;
-}
-.box input{
-	border-radius: 10px;
-	width: 30%;
-	height: 40px;
-	background-color: rgba(255, 255, 255, 0.3);
-	border: 0;
-	color: white;
-	padding-left: 2%;
-}
-.btn-submit a button{
-	border-radius: 10px;
-	text-align: center;
-	padding: 0;
-	width: 70px;
-	height: 40px;
-	cursor: pointer;
-	background-color: #dbde2a;
-	color: white;
-	border: none;
-}
-.main-mid{
+.main{
 	background-color: #d7d9de;
-	height: 1000px;
-}
-.col,.card{
-	text-align: center;
-	margin-bottom: 50px;
-}
-.card{
-	width: 180px;
-	height: 250px;
-	display: inline-block;
-	border-radius: 10px;
-	padding: 15px 25px;
-	cursor: pointer;
-	margin: 10px 15px;
-	background-position: center;
-	background-size: cover;
-	color: white;
-	overflow: hidden;
-	margin-top: 150px;
-}
-.card a h5{
-	text-align: center;
-	font-size: 20px;
-	margin-top: 180px;
-	color: white;
-}
-.card a p{
-	color: white;
-
-}
-.card1{
-	background-image: url(img/bromo.jpg);
-}
-.card2{
-	background-image: url(img/rajaampat.jpg);
-}
-.card3{
-	background-image: url(img/padar.jpg);
-}
-.card4{
-	background-image: url(img/tanahlot.jpg);
-}
-.btn-box{
-	width: 100%;
-	margin: 30px auto;
-	text-align: center;
-}
-.btn-box button{
-	width: 200px;
-	height: 50px;
-	background: linear-gradient(to right, #ec0cb0, #ff8921);
-	border-radius: 30px;
-	border: 0;
-	outline: none;
-	color: #fff;
-	cursor: pointer;
-	border: 1px solid #fff;
-	box-shadow: 0 5px #de962a;
-	margin-bottom: 50px;
-}
-.btn-box button:active{
-	position: relative;
-  	top: 7px;
-  	box-shadow: none;
-}
-.join{
-	border-top: 2px solid #fff;
+	height: 1200px;
 	z-index: 9;
 }
-.join h2{
-	margin-top: 50px;
+.main h1{
 	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	font-size: 50px;
 }
+.formulir{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg2.jpg);
+	background-size: cover;
+	width: 500px;
+	height: 30px;
+	margin: auto;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	text-align: left;
+	padding-top: 100px;
+	padding-bottom: 500px;
+	margin-bottom: 150px;
+	padding-left: 4%;
+}
+form input{
+	width: 80%;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+	margin-top: 10px;
+	font-size: 15px;
+	color: white;
+}
+form select{
+	width: 80%;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+	color: white;
+}
+.reg{
+	
+	width: 500px;
+	margin: auto;
+	color: white;
+	font-size: 18px;
+	padding: 20px;
+	border-radius: 10px;
+}
+#sub{
+	cursor: pointer;		
+	width: 300px;
+	padding: 5px;
+	outline: 0;
+	border: 3px groove;
+	color: white;
+	font-size: 18px;
+	font-style: italic;
+	background-color: #ed09da;
+}
+#sub a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+}
+#sub a:hover{
+	color: white;
+}
+
 footer{
 	background-color: #150482;
 	color: white;
